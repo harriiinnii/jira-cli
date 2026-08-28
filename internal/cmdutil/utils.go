@@ -129,7 +129,7 @@ func GetConfigHome() (string, error) {
 }
 
 // StdinHasData checks if standard input has any data to be processed.
-// It returns true only when stdin is a named pipe or a regular file —
+// Returns true only when stdin is a named pipe or a regular file —
 // i.e. when the caller explicitly piped or redirected input. Sockets,
 // character devices, and other special files return false so that
 // commands do not block waiting for data that will never arrive.
